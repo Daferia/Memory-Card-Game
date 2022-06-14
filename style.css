@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.flex,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: aquamarine;
+}
+
+.card .front,
+.card .back {
+        border-radius: 10px;
+        border: 2px solid red;
+        height: 100px;
+        aspect-ratio: 1/1;
+}
+
+.front {
+    height: 100px;
+    aspect-ratio: 1/1;
+    margin: 1em;
+    background: whitesmoke;
+    position: relative;
+}
+
+.front img{
+    height: 50px;
+    width: 50px;
+}
+
+.back {
+    z-index: 2;
+    background: orange;
+    position: absolute;
+}
+
+.show-front,
+.hidden-text {
+    display: none;
+}
+
